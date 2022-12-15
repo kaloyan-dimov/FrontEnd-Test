@@ -174,35 +174,37 @@ header {
 			width: 36px;
 		}
 	}
-}
-.tooltip {
-	position: relative;
-	visibility: hidden;
-	min-width: 80px;
-	max-height: 25px;
-	background-color: red;
-	color: red;
-	align-items: center;
-	justify-content: center;
-	border-radius: 6px;
-	padding: 5px 0;
-	bottom: 160%;
-	left: -150%;
-	opacity: 0;
-	//transform: translateY(7px);
-	transition: opacity 0.7s;
-}
-.tooltip::before {
-	position: relative;
-	content: " ";
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 12px 12.5px 0 12.5px;
-	border-color: $darkColor transparent transparent;
-	position: absolute;
-	top: 90%;
-	left: 35%;
+
+	.tooltip {
+		position: relative;
+		visibility: hidden;
+		min-width: 80px;
+		max-height: 25px;
+
+		color: white;
+		align-items: center;
+		justify-content: center;
+		border-radius: 6px;
+		padding: 5px 0;
+		bottom: 160%;
+		left: -150%;
+		opacity: 0;
+		//transform: translateY(7px);
+		transition: opacity 0.7s;
+		background-color: $darkColor;
+	}
+	.tooltip::before {
+		position: relative;
+		content: " ";
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 12px 12.5px 0 12.5px;
+		border-color: $darkColor transparent transparent;
+		position: absolute;
+		top: 90%;
+		left: 35%;
+	}
 }
 #protection {
 	background: linear-gradient(

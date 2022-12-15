@@ -97,7 +97,7 @@
 		}
 		div {
 			//padding: 10px;
-			margin: 5px;
+			//margin: 5px;
 			width: 35px;
 			height: 35px;
 			border-radius: 50%;
@@ -107,8 +107,18 @@
 				height: 18px;
 				margin: auto;
 			}
+
+			&:hover {
+				filter: hue-rotate(180deg);
+				-webkit-filter: hue-rotate(180deg);
+				background-color: $whiteColor;
+				img {
+					filter: brightness(0);
+				}
+			}
 		}
 	}
+
 	#logo {
 		display: none;
 	}

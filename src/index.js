@@ -28,6 +28,7 @@ import "./assets/icons/compare.png";
 import "./assets/icons/download.png";
 import "./assets/icons/person.png";
 import "./assets/icons/next.png";
+import "./assets/icons/favicon.ico";
 
 const navImg = document.getElementById("navImg");
 const navBar = document.getElementById("navBar");
