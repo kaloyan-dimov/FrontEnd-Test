@@ -1,0 +1,72 @@
+$darkColor: #161b21;
+$whiteColor: #fdfdfd;
+$lightGrayColor: #f1f5f9;
+$anotherGray: #cad1da;
+$orangeColor: #ffbf46;
+$greenColor: #0ebe98;
+$imgGray: #c4c4c4;
+
+h6 {
+	font-size: 12px;
+}
+
+h5 {
+	font-size: 14px;
+}
+h4 {
+	font-size: 16px;
+}
+h3 {
+	font-size: 18px;
+}
+h2 {
+	font-size: 24px;
+}
+h1 {
+	font-size: 2vw;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.space-around {
+	justify-content: space-around;
+}
+.width100 {
+	width: 100%;
+}
+
+.h-3vw {
+	height: 3.5vw;
+}
+
+.p-05vw {
+	height: auto;
+	padding: 1vw;
+}
+.pl-3vw {
+	padding-left: 3vw;
+}
+
+.ml-1vw {
+	margin-left: 1vw;
+}
+.ml-2vw {
+	margin-left: 2vw;
+}
+.ml-3vw {
+	margin-left: 3vw;
+}
+.mr-1vw {
+	margin-right: 1vw;
+}
+.mr-05vw {
+	margin-right: 0.5vw;
+}
+.orangeText {
+	color: $orangeColor;
+}
+.greenText {
+	color: $greenColor;
+}

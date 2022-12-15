@@ -1,0 +1,275 @@
+@import "config";
+@import "navigation";
+@import "scrollbar";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	//border: 1px solid black;
+}
+
+img {
+	width: 100%;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	background-color: $darkColor;
+}
+#logo {
+	font-size: 30px;
+	color: $whiteColor;
+}
+#searchBar {
+	background-color: $darkColor;
+	padding: 5px;
+	width: 20%;
+	border-style: solid;
+	border-width: 0 0 0.5px 0;
+	border-color: $whiteColor;
+	padding-left: 30px;
+	background-image: url("/dist/search.png");
+	background-position: 5px 0px;
+	background-size: 20px;
+	background-repeat: no-repeat;
+}
+
+#login {
+	display: flex;
+	align-items: center;
+	div {
+		color: $whiteColor;
+	}
+	#phone {
+		margin-right: 1vw;
+		div {
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	padding: 0.5vw 1vw 0 1vw;
+}
+#left {
+	display: flex;
+	width: 50%;
+	flex-direction: row;
+	//flex-wrap: wrap;
+}
+#container3 {
+	width: 30%;
+}
+#leftLeft {
+	//flex-grow: 1;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 70vh;
+	div {
+		background-color: $imgGray;
+		//width: 11vw;
+		//aspect-ratio: 1 / 0.75;
+		height: 100px;
+		margin: 10px 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+}
+#leftRight {
+	background-color: $imgGray;
+	width: 100%;
+	margin: auto 1vw auto 0;
+
+	#previous {
+		position: relative;
+		width: 3vw;
+		height: 4vw;
+		top: 24vw;
+		img {
+			transform: rotate(180deg);
+		}
+	}
+	#next2 {
+		position: relative;
+		//background-color: red;
+		width: 3vw;
+		height: 4vw;
+		top: 20vw;
+		left: calc(100% - 3vw);
+	}
+	.next {
+		opacity: 0.5;
+		background-color: rgba(0, 0, 0, 0.2);
+		padding: 0.7vw;
+	}
+	.next:hover {
+		opacity: 1;
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+	#mainImg {
+		width: 100%;
+		aspect-ratio: 1/1;
+		img {
+			display: block;
+		}
+	}
+}
+
+#right {
+	width: 50%;
+}
+
+.containerRight {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	* {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	div {
+		padding: 0.5vw 0;
+	}
+}
+#promotion {
+	background-color: $orangeColor;
+	padding: 5px 20px;
+	border-radius: 15px;
+	border-width: 0;
+}
+#divider {
+	height: 1px;
+	border-width: 0;
+	border-top: 2px solid #bbb;
+	border-radius: 5px;
+}
+
+#pickColor {
+	//align-items: center;
+	div:hover {
+		border: 1px solid black;
+		.tooltip {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
+	div {
+		height: 46px;
+		width: 46px;
+		background-color: $imgGray;
+		margin: 0 1vw;
+		img {
+			height: 36px;
+			width: 36px;
+		}
+	}
+}
+.tooltip {
+	position: relative;
+	visibility: hidden;
+	min-width: 80px;
+	max-height: 25px;
+	background-color: red;
+	color: red;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	bottom: 160%;
+	left: -150%;
+	opacity: 0;
+	//transform: translateY(7px);
+	transition: opacity 0.7s;
+}
+.tooltip::before {
+	position: relative;
+	content: " ";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 12px 12.5px 0 12.5px;
+	border-color: $darkColor transparent transparent;
+	position: absolute;
+	top: 90%;
+	left: 35%;
+}
+#protection {
+	background: linear-gradient(
+		90deg,
+		#29323d 0%,
+		rgba(69, 75, 83, 1) 50%,
+		#29323d 100%
+	);
+}
+
+#addCart {
+	background-color: #161b21;
+	color: $whiteColor;
+	width: 47%;
+	justify-content: center;
+}
+
+#credit {
+	background: none;
+	border-color: $orangeColor;
+	border-width: 1px;
+	width: 47%;
+}
+
+#addFavorites > button {
+	background: none;
+	border: none;
+}
+
+.icon {
+	width: 25px;
+	height: 25px;
+}
+.hidden {
+	display: none;
+}
+.iconGreen {
+	border: 1px solid $greenColor;
+	&:hover {
+		background-color: $greenColor;
+	}
+}
+.iconWhite {
+	border: 1px solid $whiteColor;
+	&:hover {
+		background-color: $whiteColor;
+	}
+}
+.iconLarge {
+	padding: 10px;
+	margin: 5px;
+	width: 50px;
+	border-radius: 50%;
+	//height: 50px;
+}
+
+.oldPrice {
+	text-decoration: line-through;
+	color: gray;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+@import "media";

@@ -1,0 +1,120 @@
+@media (max-width: 1000px) {
+	#logo {
+		padding-left: 6vw;
+	}
+	#phone {
+		h5 {
+			display: none;
+		}
+	}
+	#left {
+		flex-direction: column-reverse;
+		width: 50%;
+	}
+	#container3 {
+		display: flex;
+		overflow: auto;
+		width: 100%;
+		height: auto;
+
+		#leftLeft {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: nowrap;
+			width: auto;
+			height: auto;
+			overflow: hidden;
+			margin: 0.5vw;
+			div {
+				width: max-content;
+			}
+		}
+	}
+	#protection {
+		padding: 1vw;
+	}
+	#leftRight {
+		width: 95%;
+		margin: auto;
+		#previous {
+			width: 4vw;
+			height: 5vw;
+			top: 32vw;
+			img {
+				transform: rotate(180deg);
+			}
+		}
+		#next2 {
+			width: 4vw;
+			height: 5vw;
+			top: 27vw;
+			left: calc(100% - 4vw);
+		}
+	}
+	h1 {
+		font-size: 4vw;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column;
+		#left {
+			width: 90%;
+		}
+		#right {
+			width: 85%;
+			* {
+				margin-bottom: 1vw;
+			}
+			// * {
+			// 	margin: 0.4vw 0;
+			// }
+		}
+		#leftRight {
+			width: 60%;
+			margin: auto;
+		}
+	}
+	.icon {
+		height: 15px;
+		width: 15px;
+	}
+	.iconLarge {
+		padding: 5px;
+		margin: 3px;
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+	}
+}
+
+@media (max-width: 500px) {
+	#phone {
+		h4 {
+			display: none;
+		}
+		div {
+			//padding: 10px;
+			margin: 5px;
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+			border: 1px solid $whiteColor;
+			img {
+				width: 18px;
+				height: 18px;
+				margin: auto;
+			}
+		}
+	}
+	#logo {
+		display: none;
+	}
+
+	#searchBar {
+		width: 30%;
+		margin-left: 10vw;
+	}
+}

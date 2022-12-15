@@ -1,0 +1,117 @@
+#navBar {
+	display: flex;
+	align-items: center;
+	background-color: #29323d;
+	padding: 0 1vw;
+	z-index: 2;
+
+	ul {
+		display: flex;
+		align-items: center;
+		color: $whiteColor;
+		height: 45px;
+		font-size: 1.3vw;
+	}
+	ul:hover {
+		cursor: pointer;
+		background-color: lightgray;
+	}
+	// -webkit-transition: all 1s ease-in-out;
+	// transition: all 1s ease-in-out;
+}
+
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	//border: 1px solid $darkColor;
+	outline-style: solid;
+	outline-color: $darkColor;
+	outline-width: 1px;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 1s ease-in-out;
+	background-color: white;
+}
+#navImg {
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+// Media Queries
+@media (max-width: 1000px) {
+	header {
+		padding-left: 6vw;
+	}
+	#navImg {
+		display: block;
+		position: fixed;
+		top: 3vw;
+		left: 1.5vw;
+	}
+	#navImg.active {
+		transform: translateX(38vw);
+	}
+	// #navImg.active {
+	// 	transform: translateX(40vw);
+	// }
+	#navImg.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+	#navImg.active .bar:nth-child(1) {
+		transform: translateY(1px) rotate(-40deg);
+	}
+	#navImg.active .bar:nth-child(3) {
+		transform: translateY(-1px) rotate(40deg);
+	}
+	#navImg.active .bar {
+		outline: none;
+	}
+	#navBar {
+		height: auto;
+		flex-direction: column;
+		position: absolute;
+		top: 0;
+		left: -45vw;
+		width: 45vw;
+		transition: 0.5s;
+		ul {
+			width: 100%;
+			justify-content: center;
+			font-size: 2.2vw;
+			//left: -45vw;
+		}
+		#navToggle {
+			display: flex;
+			justify-content: end;
+			padding-right: 2vw;
+		}
+	}
+	#navBar.active {
+		left: 0;
+	}
+}
+@media (max-width: 768px) {
+	#navBar {
+		left: -70vw;
+		width: 70vw;
+		ul {
+			font-size: 3vw;
+			//left: -45vw;
+		}
+	}
+	#navImg.active {
+		transform: translateX(60vw);
+	}
+}
+@media (max-width: 500px) {
+	#navBar {
+		left: -100vw;
+		width: 100vw;
+		ul {
+			font-size: 4vw;
+		}
+	}
+	#navImg.active {
+		transform: translateX(85vw);
+	}
+}
