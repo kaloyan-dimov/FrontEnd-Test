@@ -20,6 +20,12 @@
 	// transition: all 1s ease-in-out;
 }
 
+#cover.active {
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+}
+
 .bar {
 	display: block;
 	width: 25px;

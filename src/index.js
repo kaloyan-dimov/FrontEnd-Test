@@ -32,10 +32,12 @@ import "./assets/icons/favicon.ico";
 
 const navImg = document.getElementById("navImg");
 const navBar = document.getElementById("navBar");
+const cover = document.getElementById("cover");
 
 navImg.addEventListener("click", () => {
 	navImg.classList.toggle("active");
 	navBar.classList.toggle("active");
+	cover.classList.toggle("active");
 });
 
 // console.log("logs");

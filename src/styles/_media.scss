@@ -12,20 +12,25 @@
 		width: 50%;
 	}
 	#container3 {
-		display: flex;
-		overflow: auto;
+		// display: flex;
+		// overflow: auto;
 		width: 100%;
-		height: auto;
+		// height: auto;
 
 		#leftLeft {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-wrap: nowrap;
-			width: auto;
-			height: auto;
-			overflow: hidden;
-			margin: 0.5vw;
+			// display: flex;
+			// align-items: center;
+			// justify-content: center;
+			// flex-wrap: nowrap;
+			// width: auto;
+			// height: auto;
+			// overflow: hidden;
+			//margin: 0.5vw;
+			display: -webkit-inline-box;
+			//display: inline-box;
+			img {
+				width: 150px;
+			}
 			div {
 				width: max-content;
 			}
