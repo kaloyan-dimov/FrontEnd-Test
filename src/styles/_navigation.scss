@@ -2,15 +2,14 @@
 	display: flex;
 	align-items: center;
 	background-color: #29323d;
-	padding: 0 1vw;
 	z-index: 2;
-
 	ul {
 		display: flex;
 		align-items: center;
 		color: $whiteColor;
 		height: 45px;
 		font-size: 1.3vw;
+		padding: 0 0.5vw;
 	}
 	ul:hover {
 		cursor: pointer;

@@ -30,6 +30,7 @@ import "./assets/icons/person.png";
 import "./assets/icons/next.png";
 import "./assets/icons/favicon.ico";
 
+let body = document.body;
 const navImg = document.getElementById("navImg");
 const navBar = document.getElementById("navBar");
 const cover = document.getElementById("cover");
@@ -38,6 +39,7 @@ navImg.addEventListener("click", () => {
 	navImg.classList.toggle("active");
 	navBar.classList.toggle("active");
 	cover.classList.toggle("active");
+	body.classList.toggle("active");
 });
 
 // console.log("logs");
@@ -105,7 +107,6 @@ navImg.addEventListener("click", () => {
 // 		//console.log("selectImg.src", selectImg.src);
 // 	});
 // });
-
 let mainImg = document.getElementById("mainImg").querySelector("img");
 let children = document.querySelector("#leftLeft").childNodes;
 let previous = document.getElementById("previous");
@@ -124,33 +125,21 @@ Array.from(children).forEach((child, index) => {
 		currentIndex = index;
 		checkIndex();
 		let selectImg = child.querySelector("img");
-		//mainImg.src = selectImg.src;
 	});
 });
 
 previous.addEventListener("click", () => {
 	currentIndex = currentIndex - 2;
-	// console.log(
-	// 	"prev",
-	// 	currentIndex - 2,
-	// 	children[currentIndex - 2].querySelector("img").src
-	// );
 	checkIndex();
 });
 
 next.addEventListener("click", () => {
 	currentIndex = currentIndex + 2;
-
-	// console.log(
-	// 	"next",
-	// 	currentIndex + 2,
-	// 	children[currentIndex].querySelector("img").src
-	// );
 	checkIndex();
-	//mainImg.src = children[currentIndex].querySelector("img").src;
 });
 
 function checkIndex() {
+	mainImg.classList.toggle("fade");
 	console.log("currIndex", currentIndex);
 	if (currentIndex <= 1) {
 		previous.classList.add("hidden");
@@ -160,5 +149,8 @@ function checkIndex() {
 		previous.classList.remove("hidden");
 		next.classList.remove("hidden");
 	}
-	mainImg.src = children[currentIndex].querySelector("img").src;
+	setTimeout(() => {
+		mainImg.src = children[currentIndex].querySelector("img").src;
+		mainImg.classList.toggle("fade");
+	}, 1000);
 }

@@ -1,4 +1,7 @@
 @media (max-width: 1000px) {
+	.h-3vw {
+		height: 7vw;
+	}
 	#logo {
 		padding-left: 6vw;
 	}
@@ -12,30 +15,35 @@
 		width: 50%;
 	}
 	#container3 {
-		// display: flex;
-		// overflow: auto;
-		width: 100%;
-		// height: auto;
-
+		width: 95%;
+		overflow-y: hidden;
+		overflow-x: auto;
 		#leftLeft {
-			// display: flex;
-			// align-items: center;
-			// justify-content: center;
-			// flex-wrap: nowrap;
-			// width: auto;
-			// height: auto;
-			// overflow: hidden;
-			//margin: 0.5vw;
 			display: -webkit-inline-box;
-			//display: inline-box;
+
 			img {
 				width: 150px;
 			}
 			div {
 				width: max-content;
+				margin-right: 1vw;
 			}
 		}
 	}
+	#cover {
+		position: fixed;
+	}
+	#navBar {
+		position: fixed;
+		max-height: 100vh;
+		overflow: auto;
+		ul {
+			padding: 1vw;
+		}
+	}
+	// .tooltip {
+	// 	left: -125% !important;
+	// }
 	#protection {
 		padding: 1vw;
 	}
@@ -45,7 +53,6 @@
 		#previous {
 			width: 4vw;
 			height: 5vw;
-			top: 32vw;
 			img {
 				transform: rotate(180deg);
 			}
@@ -53,16 +60,71 @@
 		#next2 {
 			width: 4vw;
 			height: 5vw;
-			top: 27vw;
-			left: calc(100% - 4vw);
+			left: 44vw;
 		}
 	}
 	h1 {
 		font-size: 4vw;
 	}
+	#pickColor {
+		//align-items: center;
+		div:hover div {
+			all: unset !important;
+		}
+		div:hover + .tooltip {
+			all: unset !important;
+		}
+	}
+	.tooltipText img {
+		display: none;
+	}
+	.tooltip {
+		//background-color: red !important;
+		all: unset !important;
+	}
+	.tooltip::before {
+		all: unset !important;
+	}
+	.tooltipText {
+		all: unset;
+		//background-color: red;
+		display: flex;
+		text-align: center;
+		border: 2px solid black;
+		border-radius: 25px;
+		justify-content: center;
+		align-items: center !important;
+		height: 2vw !important;
+		cursor: pointer;
+		&:hover {
+			background-color: black;
+			color: $anotherGray;
+			border-color: $anotherGray;
+		}
+		.pointer {
+			all: unset;
+			display: none;
+		}
+		// .tooltip {
+		// 	margin: auto;
+		// }
+	}
+
+	.tooltip:hover {
+		all: unset !important;
+	}
+	div:hover + .tooltip {
+		all: unset !important;
+		visibility: hidden;
+
+		align-items: center;
+	}
 }
 
 @media (max-width: 768px) {
+	.h-3vw {
+		height: 8vw;
+	}
 	.container {
 		flex-direction: column;
 		#left {
@@ -70,7 +132,7 @@
 		}
 		#right {
 			width: 85%;
-			* {
+			div {
 				margin-bottom: 1vw;
 			}
 			// * {
@@ -82,6 +144,13 @@
 			margin: auto;
 		}
 	}
+	#next2 {
+		left: 68vw !important;
+	}
+
+	// .tooltip {
+	// 	margin-bottom: -1vw !important;
+	// }
 	.icon {
 		height: 15px;
 		width: 15px;
@@ -96,6 +165,9 @@
 }
 
 @media (max-width: 500px) {
+	.h-3vw {
+		height: 20vw;
+	}
 	#phone {
 		h4 {
 			display: none;
@@ -131,5 +203,11 @@
 	#searchBar {
 		width: 30%;
 		margin-left: 10vw;
+	}
+	#next2 {
+		left: 66vw !important;
+	}
+	.tooltipText {
+		height: 3.5vw !important;
 	}
 }
