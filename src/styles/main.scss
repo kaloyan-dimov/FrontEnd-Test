@@ -121,7 +121,6 @@ header {
 		opacity: 0.5;
 		background-color: rgba(0, 0, 0, 0.2);
 		padding: 0.7vw;
-
 		width: 3vw;
 	}
 	.next:hover {
@@ -147,10 +146,6 @@ header {
 			-o-transition: opacity 1s ease-in-out;
 			transition: opacity 1s ease-in-out;
 		}
-		// #img1 {
-
-		// }
-
 		img.fade {
 			opacity: 0;
 		}
@@ -159,6 +154,7 @@ header {
 
 #right {
 	width: 50%;
+	margin-left: 1vw;
 }
 
 .containerRight {
