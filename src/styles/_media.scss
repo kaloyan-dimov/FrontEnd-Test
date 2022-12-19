@@ -22,7 +22,8 @@
 			display: -webkit-inline-box;
 
 			img {
-				width: 150px;
+				//width: 150px;
+				height: 100%;
 			}
 			div {
 				width: max-content;
@@ -60,7 +61,7 @@
 		#next2 {
 			width: 4vw;
 			height: 5vw;
-			left: 44vw;
+			left: -5vw;
 		}
 	}
 	h1 {
@@ -144,9 +145,9 @@
 			margin: auto;
 		}
 	}
-	#next2 {
-		left: 68vw !important;
-	}
+	// #next2 {
+	// 	left: 68vw !important;
+	// }
 
 	// .tooltip {
 	// 	margin-bottom: -1vw !important;
@@ -204,9 +205,9 @@
 		width: 30%;
 		margin-left: 10vw;
 	}
-	#next2 {
-		left: 66vw !important;
-	}
+	// #next2 {
+	// 	left: 66vw !important;
+	// }
 	.tooltipText {
 		height: 3.5vw !important;
 	}

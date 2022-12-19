@@ -91,7 +91,7 @@ header {
 	}
 }
 #leftRight {
-	width: 100%;
+	width: 80%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -101,6 +101,7 @@ header {
 		width: 100%;
 		margin: auto 1vw auto 0;
 	}
+
 	#previous {
 		position: absolute;
 		width: 3vw;
@@ -113,13 +114,15 @@ header {
 	#next2 {
 		width: 3vw;
 		height: 4vw;
-		position: absolute;
-		right: 51vw;
+		position: relative;
+		right: 4vw;
 	}
 	.next {
 		opacity: 0.5;
 		background-color: rgba(0, 0, 0, 0.2);
 		padding: 0.7vw;
+
+		width: 3vw;
 	}
 	.next:hover {
 		opacity: 1;
