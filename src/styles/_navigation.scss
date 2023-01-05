@@ -3,14 +3,14 @@
 	align-items: center;
 	background-color: #29323d;
 	z-index: 2;
-	padding: 8px 15px;
+	padding: 0 15px;
 	ul {
 		display: flex;
 		align-items: center;
 		color: $whiteColor;
 		height: 45px;
 		font-size: 0.9vw;
-		padding: 0 0.5vw;
+		padding: 8px 0.5vw;
 	}
 	ul:hover {
 		cursor: pointer;
