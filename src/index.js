@@ -8,6 +8,7 @@ import "./assets/img/img7.png";
 import "./assets/img/img8.png";
 import "./assets/img/img9.png";
 import "./assets/img/img10.png";
+import "./assets/img/SonyCenter.png";
 import "./styles/main.scss";
 import "./assets/icons/nav.png";
 import "./assets/icons/icon.png";
