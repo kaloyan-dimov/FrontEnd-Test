@@ -1,6 +1,6 @@
 *::-webkit-scrollbar,
 *::-webkit-scrollbar-thumb {
-	width: 26px;
+	width: 22px;
 	border-radius: 13px;
 	height: 50px;
 	color: #818a96;
@@ -21,4 +21,11 @@
 	background-color: #cad1da;
 	background-clip: padding-box;
 	border: 10px solid transparent;
+}
+
+@media (max-width: 1000px) {
+	*::-webkit-scrollbar,
+	*::-webkit-scrollbar-thumb {
+		border: 12px solid transparent;
+	}
 }

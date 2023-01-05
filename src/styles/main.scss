@@ -6,7 +6,10 @@
 	font-family: MontExtraLight;
 	src: url(../assets/fonts/Mont-ExtraLightDEMO.otf);
 }
-
+@font-face {
+	font-family: MontHeavy;
+	src: url(../assets/fonts/Mont-HeavyDEMO.otf);
+}
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -30,7 +33,7 @@ header {
 }
 #logo {
 	img {
-		height: 54px;
+		height: 2.8vw;
 	}
 }
 #searchBar {
@@ -70,13 +73,12 @@ header {
 	display: flex;
 	width: 50%;
 	flex-direction: row;
-	//flex-wrap: wrap;
+	max-height: 65vh;
 }
 #container3 {
-	width: 30%;
-	max-height: 55vh;
+	width: 17%;
+	max-height: 100%;
 	overflow: auto;
-	margin: auto;
 }
 #leftLeft {
 	//flex-grow: 1;
@@ -87,12 +89,16 @@ header {
 		background-color: $lightGrayColor;
 		//width: 11vw;
 		//aspect-ratio: 1 / 0.75;
-		height: 100px;
-		margin: 10px 0;
+		max-width: 100%;
+		aspect-ratio: 1/1;
+		margin: 20px 0;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		cursor: pointer;
+		img {
+			width: 75%;
+		}
 	}
 }
 #leftRight {
@@ -117,10 +123,10 @@ header {
 		}
 	}
 	#next2 {
-		width: 3vw;
+		width: 0;
 		height: 4vw;
 		position: relative;
-		right: 4vw;
+		right: 3vw;
 	}
 	.next {
 		opacity: 0.5;
@@ -135,15 +141,15 @@ header {
 	#mainImg {
 		background-color: $lightGrayColor;
 		width: 100%;
-		height: 40vw;
+		height: 34vw;
 		aspect-ratio: 1/1;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin-right: 1vw;
 		img {
 			display: block;
 			padding: auto;
+			width: 80%;
 			opacity: 1;
 			-webkit-transition: opacity 1s ease-in-out;
 			-moz-transition: opacity 1s ease-in-out;
@@ -158,8 +164,7 @@ header {
 }
 
 #right {
-	width: 40%;
-	margin-left: 1vw;
+	width: 41%;
 }
 
 .containerRight {
@@ -174,6 +179,10 @@ header {
 	}
 	div {
 		padding: 0.5vw 0;
+	}
+	h2,
+	h1 {
+		font-family: MontHeavy;
 	}
 }
 #promotion {
@@ -216,9 +225,7 @@ header {
 			background-color: $lightGrayColor;
 		}
 		img {
-			//height: 42px;
 			width: 42px;
-			margin: 1vw;
 		}
 	}
 
@@ -300,7 +307,7 @@ header {
 	}
 }
 .iconLarge {
-	padding: 10px;
+	padding: 15px;
 	margin: 5px;
 	width: 60px;
 	border-radius: 50%;
