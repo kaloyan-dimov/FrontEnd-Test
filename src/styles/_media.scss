@@ -179,15 +179,17 @@
 
 @media (max-width: 500px) {
 	.h-3vw {
-		height: 20vw;
+		height: 15vw !important;
+	}
+	#login {
+		align-items: unset;
 	}
 	#phone {
 		h2 {
 			display: none;
 		}
 		div {
-			//padding: 10px;
-			//margin: 5px;
+			margin-top: 0.7vw;
 			width: 35px;
 			height: 35px;
 			border-radius: 50%;
@@ -220,10 +222,13 @@
 		width: 30%;
 		margin-left: 10vw;
 	}
-	// #next2 {
-	// 	left: 66vw !important;
-	// }
 	.tooltipText {
 		height: 3.5vw !important;
+	}
+	#addCart h4 {
+		font-size: 4vw !important;
+	}
+	#credit h5 {
+		font-size: 2.7vw !important;
 	}
 }

@@ -1,6 +1,8 @@
 @import "config";
 @import "navigation";
 @import "scrollbar";
+@import "header";
+@import "gallery";
 
 @font-face {
 	font-family: MontExtraLight;
@@ -21,57 +23,13 @@ body.active {
 	overflow: hidden;
 }
 
-img {
-	width: 100%;
-}
-
-header {
-	display: flex;
-	align-items: center;
-	padding: 25px;
-	background-color: $darkColor;
-}
-#logo {
-	img {
-		height: 2.8vw;
-	}
-}
-#searchBar {
-	background-color: $darkColor;
-	width: 20%;
-	border-style: solid;
-	border-width: 0 0 0.5px 0;
-	border-color: $whiteColor;
-	padding-left: 60px;
-	background-image: url("/dist/search.png");
-	background-position: 5px 0px;
-	background-size: 35px;
-	background-repeat: no-repeat;
-	height: 45px;
-}
-
-#login {
-	display: flex;
-	align-items: center;
-	div {
-		color: $whiteColor;
-	}
-	#phone {
-		margin-right: 1vw;
-		div {
-			display: flex;
-			align-items: center;
-		}
-	}
-}
-
 .container {
 	display: flex;
 	padding: 0.5vw 1vw 0 1vw;
 }
 #left {
 	display: flex;
-	width: 50%;
+	width: 51%;
 	flex-direction: row;
 	max-height: 65vh;
 }
@@ -81,14 +39,8 @@ header {
 	overflow: auto;
 }
 #leftLeft {
-	//flex-grow: 1;
-	// overflow-y: auto;
-	// overflow-x: hidden;
-	// height: 70vh;
 	div {
 		background-color: $lightGrayColor;
-		//width: 11vw;
-		//aspect-ratio: 1 / 0.75;
 		max-width: 100%;
 		aspect-ratio: 1/1;
 		margin: 20px 0;
@@ -280,6 +232,13 @@ header {
 	border-color: $orangeColor;
 	border-width: 1px;
 	width: 47%;
+	display: inline-block;
+	h5 {
+		display: inline-block;
+	}
+	h5:nth-child(2) {
+		color: #ffbf46;
+	}
 }
 
 #addFavorites > button {

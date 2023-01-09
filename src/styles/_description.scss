@@ -1,0 +1,135 @@
+#right {
+	width: 41%;
+}
+
+.containerRight {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	* {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	div {
+		padding: 0.5vw 0;
+	}
+	h2,
+	h1 {
+		font-family: MontHeavy;
+	}
+}
+#promotion {
+	background-color: $orangeColor;
+	padding: 5px 20px;
+	border-radius: 15px;
+	border-width: 0;
+}
+#divider {
+	height: 1px;
+	border-width: 0;
+	border-top: 2px solid #bbb;
+	border-radius: 5px;
+}
+#cover {
+	background-color: black;
+	position: absolute;
+	width: 0;
+	height: 0;
+	z-index: 2;
+	top: 0;
+	transition: width 0.7s, height 0.7s, opacity 0.7s;
+}
+
+#pickColor {
+	//align-items: center;
+	margin: 0.7vw 0;
+	div:hover div {
+		border: 1px solid black;
+	}
+	div:hover + .tooltip {
+		visibility: visible;
+		opacity: 1;
+	}
+	div {
+		height: 45px;
+		width: 45px;
+		margin: 0 0.2vw;
+		div {
+			background-color: $lightGrayColor;
+		}
+		img {
+			width: 42px;
+		}
+	}
+
+	.tooltip {
+		position: relative;
+		visibility: hidden;
+		min-width: 80px;
+		max-height: 25px;
+		color: white;
+		align-items: center;
+		justify-content: center;
+		border-radius: 6px;
+		padding: 5px 0;
+		margin-bottom: 100px;
+		left: -150%;
+		opacity: 0;
+		//transform: translateY(7px);
+		transition: opacity 0.7s;
+		background-color: $darkColor;
+	}
+	.tooltip::before {
+		position: relative;
+		content: " ";
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 12px 12.5px 0 12.5px;
+		border-color: $darkColor transparent transparent;
+		position: absolute;
+		top: 90%;
+		left: 35%;
+	}
+}
+#protection {
+	background: linear-gradient(
+		90deg,
+		#29323d 0%,
+		rgba(69, 75, 83, 1) 50%,
+		#29323d 100%
+	);
+}
+
+#addCart {
+	background-color: #161b21;
+	color: $whiteColor;
+	width: 47%;
+	justify-content: center;
+}
+
+#credit {
+	background: none;
+	border-color: $orangeColor;
+	border-width: 1px;
+	width: 47%;
+	display: inline-block;
+	h5 {
+		display: inline-block;
+	}
+	h5:nth-child(2) {
+		color: #ffbf46;
+	}
+}
+
+#addFavorites > button {
+	background: none;
+	border: none;
+}
+
+.oldPrice {
+	text-decoration: line-through;
+	color: gray;
+}

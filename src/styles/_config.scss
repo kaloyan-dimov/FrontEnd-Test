@@ -1,3 +1,12 @@
+@font-face {
+	font-family: MontExtraLight;
+	src: url(../assets/fonts/Mont-ExtraLightDEMO.otf);
+}
+@font-face {
+	font-family: MontHeavy;
+	src: url(../assets/fonts/Mont-HeavyDEMO.otf);
+}
+
 $darkColor: #161b21;
 $whiteColor: #fdfdfd;
 $lightGrayColor: #f1f5f9;
@@ -5,6 +14,14 @@ $anotherGray: #cad1da;
 $orangeColor: #ffbf46;
 $greenColor: #0ebe98;
 $imgGray: #c4c4c4;
+
+img {
+	width: 100%;
+}
+
+.pointer {
+	cursor: pointer;
+}
 
 h6 {
 	font-size: 12px;
@@ -23,7 +40,7 @@ h2 {
 	font-size: 24px;
 }
 h1 {
-	font-size: 2vw;
+	font-size: 1.7vw;
 }
 
 .space-between {
@@ -68,6 +85,9 @@ h1 {
 .mr-05vw {
 	margin-right: 0.5vw;
 }
+.mt-03vw {
+	margin-top: 0.3vw;
+}
 .mtb-05vw {
 	margin: 0.5vw 0;
 }
@@ -76,4 +96,29 @@ h1 {
 }
 .greenText {
 	color: $greenColor;
+}
+.hidden {
+	display: none;
+}
+.iconGreen {
+	border: 1px solid $greenColor;
+	&:hover {
+		background-color: $greenColor;
+	}
+}
+.iconWhite {
+	border: 1px solid $whiteColor;
+	&:hover {
+		background-color: $whiteColor;
+	}
+}
+.iconLarge {
+	padding: 15px;
+	margin: 5px;
+	width: 60px;
+	border-radius: 50%;
+}
+
+.underline {
+	text-decoration: underline;
 }

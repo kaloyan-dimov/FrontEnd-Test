@@ -1,0 +1,87 @@
+#left {
+	display: flex;
+	width: 51%;
+	flex-direction: row;
+	max-height: 65vh;
+}
+#container3 {
+	width: 17%;
+	max-height: 100%;
+	overflow: auto;
+}
+#leftLeft {
+	div {
+		background-color: $lightGrayColor;
+		max-width: 100%;
+		aspect-ratio: 1/1;
+		margin: 20px 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		img {
+			width: 75%;
+		}
+	}
+}
+#leftRight {
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+	.tooltipText {
+		background-color: $imgGray;
+		width: 100%;
+		margin: auto 1vw auto 0;
+	}
+
+	#previous {
+		position: absolute;
+		width: 3vw;
+		height: 4vw;
+
+		img {
+			transform: rotate(180deg);
+		}
+	}
+	#next2 {
+		width: 0;
+		height: 4vw;
+		position: relative;
+		right: 3vw;
+	}
+	.next {
+		opacity: 0.5;
+		background-color: rgba(0, 0, 0, 0.2);
+		padding: 0.7vw;
+		width: 3vw;
+	}
+	.next:hover {
+		opacity: 1;
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+	#mainImg {
+		background-color: $lightGrayColor;
+		width: 100%;
+		height: 34vw;
+		aspect-ratio: 1/1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img {
+			display: block;
+			padding: auto;
+			width: 80%;
+			opacity: 1;
+			-webkit-transition: opacity 1s ease-in-out;
+			-moz-transition: opacity 1s ease-in-out;
+			-ms-transition: opacity 1s ease-in-out;
+			-o-transition: opacity 1s ease-in-out;
+			transition: opacity 1s ease-in-out;
+		}
+		img.fade {
+			opacity: 0;
+		}
+	}
+}
